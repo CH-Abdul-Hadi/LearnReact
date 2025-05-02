@@ -1,11 +1,18 @@
-import React from 'react'
+import React ,{ useContext }from 'react'
 import Hero from './Componets/Hero/Hero'
+import { ThemeProvider } from './Context/store'
+import Navbar from './Componets/NavBar/Navbar'
+
+
 
 function App() {
   return (
-    <div>
+    <>
+      <ThemeProvider.Provider value={{Theme, toggleTheme}}>
+      <Navbar/>
       <Hero/>
-    </div>
+      </ThemeProvider.Provider>
+    </>
   )
 }
 

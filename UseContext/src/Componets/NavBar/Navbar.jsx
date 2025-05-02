@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div>
       <button>
-        
+        Theme
       </button>
     </div>
   )
